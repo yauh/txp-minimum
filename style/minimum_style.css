@@ -113,7 +113,12 @@ p.time {
 ul,ol {
  margin: 10px 0 10px 40px;
 }
+
 li {
  padding-bottom: 10px;
  line-height: 30px;
+}
+
+footer {
+ padding 1px;
 }

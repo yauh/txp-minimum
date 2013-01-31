@@ -1,5 +1,6 @@
 <footer role="contentinfo">
 		<div class="span8 footer center">
+<p>
 		Powered by <a href="http://textpattern.com/">Textpattern</a> | Theme: <a href="http://minimum.yauh.de/">Minimum</a> by <a href="http://yauh.de">Stephan Hochhaus</a>.
-		</div>
+		<p></div>
 </footer>
