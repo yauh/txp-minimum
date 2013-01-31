@@ -17,6 +17,11 @@ a, a:hover {
  border-bottom: 1px #333333 dashed;
 }
 
+img {
+ max-width: 100%;
+ height: auto;
+}
+
 header {
  margin: 0 0 30px 0;
  width: 100%;
@@ -95,6 +100,14 @@ p.time {
 
 .footer {
  text-align: center;
+}
+
+.older {
+  text-align: left;
+}
+
+.newer {
+  text-align: right;
 }
 
 ul,ol {

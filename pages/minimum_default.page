@@ -12,6 +12,31 @@
 
            <txp:if_article_list>
                <txp:article form="minimum_post" limit="5" pgonly="0" status="live"/>
+
+<txp:variable name="has_np" value='<txp:older /><txp:newer />' />
+	<txp:if_variable name="has_np" value="">
+
+
+		<txp:else />
+<div class="row">
+<div class="span4">
+	<txp:variable name="older" value='<txp:older />' />
+	<txp:if_variable name="older" value="">
+		<txp:else />
+   		<div class="nav-links older">&#8592; <txp:older><txp:text item="older" /></txp:older></div>
+	</txp:if_variable>
+	</div>
+<div class="span4">
+	<txp:variable name="newer" value='<txp:newer />' />
+	<txp:if_variable name="newer" value="">
+		<txp:else />
+   		<div class="nav-links newer"><txp:newer><txp:text item="newer" /></txp:newer> &#8594;</div>
+	</txp:if_variable>
+
+		</div>
+</div>
+</div>
+	</txp:if_variable>
            </txp:if_article_list>
 
        </div>

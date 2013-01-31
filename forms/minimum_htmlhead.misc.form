@@ -42,8 +42,9 @@
    
    <txp:feed_link flavor="atom" format="link" label="Atom" section="" />
    <txp:feed_link flavor="rss" format="link" label="RSS" section="" />
-   <link rel="stylesheet" type="text/css" media="screen" href="<txp:css name="bootstrap_min" />" />  
+   
+<link rel="stylesheet" type="text/css" media="screen" href="<txp:css name="bootstrap_min" />" />  
    <link rel="stylesheet" type="text/css" media="screen" href="<txp:css name="minimum_style" />" />
- 
+
    <link href='http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo' rel='stylesheet' type='text/css'>
 </head>
