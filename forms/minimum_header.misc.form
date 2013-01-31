@@ -1,0 +1,4 @@
+<header role="banner">
+<h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+<h2><txp:site_slogan /></h2>
+</header>

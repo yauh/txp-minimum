@@ -1,0 +1,11 @@
+<div class="post">
+<h1 class="title">
+<txp:permlink><txp:title /></txp:permlink>
+</h1>
+<div class="body">
+<p class="time">
+<txp:posted />
+</p>
+<txp:body />
+</div>
+</div>

@@ -1,0 +1,106 @@
+body{ 
+ background-color: rgb(250, 250, 250);
+ font-family: serif;
+}
+
+p {
+ padding: 0 0 0 0;
+}
+
+strong {
+ font-weight: bold;
+}
+
+a, a:hover {
+ color: #000000;
+ text-decoration: none;
+ border-bottom: 1px #333333 dashed;
+}
+
+header {
+ margin: 0 0 30px 0;
+ width: 100%;
+ height: 50px;
+}
+
+header h1 {
+ text-align:   center;
+ font-size: 40px;
+ margin: 60px 0 4px 0;
+ font-family: 'Ovo', serif;
+ color: #000000;
+ text-transform: uppercase;
+}
+
+header h2 {
+ text-align:   center;
+ font-size: 18px;
+ margin: 1px 0 1px 0;
+ font-family: 'Ovo', serif;
+ color: #000000;
+ text-transform: uppercase;
+}
+
+header a, header a:hover {
+ border: none;
+}
+
+.center {
+ margin: 0 auto;
+ float: none;
+}
+
+.post {
+ margin: 20px 0 0 0;
+ padding: 20px 0 20px 0;
+ border-bottom: 1px rgb(200,200,200) solid;
+}
+
+.post h1{
+ padding: 20px 20px 0px 20px;
+ font-size: 30px;
+ font-family: 'Ovo', serif;
+ color: #000000;
+ text-align: center;
+}
+
+p.time {
+ font-weight: bold;
+ padding: 0 0 20px 0;
+ margin: 0;
+ font-size: 14px;
+ text-align: center;
+ font-style: italic;
+}
+
+.body {
+ margin: 0;
+ padding: 0px 20px 20px 20px;
+ font-family: 'Average', serif;
+ font-size: 20px;
+ line-height: 40px;
+}
+
+.body img{
+ margin: 20px auto 20px auto;
+ display: block;
+ -webkit-box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+ box-shadow:  0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+#paginator {
+ padding: 20px;
+ text-align: center;
+}
+
+.footer {
+ text-align: center;
+}
+
+ul,ol {
+ margin: 10px 0 10px 40px;
+}
+li {
+ padding-bottom: 10px;
+ line-height: 30px;
+}
