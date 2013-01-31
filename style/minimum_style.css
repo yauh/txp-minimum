@@ -4,7 +4,7 @@ body{
 }
 
 p {
- padding: 0 0 0 0;
+ padding: 0 0 10px 0;
 }
 
 strong {
@@ -83,7 +83,7 @@ p.time {
  padding: 0px 20px 20px 20px;
  font-family: 'Average', serif;
  font-size: 20px;
- line-height: 40px;
+ line-height: 35px;
 }
 
 .body img{
