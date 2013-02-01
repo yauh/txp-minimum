@@ -1,3 +1,10 @@
+<txp:if_plugin name="aks_header" version="0.3">
+   <txp:aks_header strip="1" gzip="1" />
+</txp:if_plugin>
+
+<!DOCTYPE html>
+<html lang="<txp:lang />">
+
 <txp:output_form form="minimum_htmlhead" />
 
 <body>
