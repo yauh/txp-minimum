@@ -1,55 +1,52 @@
 <head>
-<meta charset="utf-8">
-<title>
-  <txp:if_status>
-    <txp:if_article_list>
-      <txp:if_category>
-        <txp:category title="1" /> <txp:chh_if_data><txp:page_url type="pg" /> </txp:chh_if_data>&bull; <txp:site_name />
-      <txp:else />
-        <txp:if_section name=",default">
-          <txp:site_name />
-        <txp:else />
-          <txp:section title="1" /> <txp:chh_if_data><txp:page_url type="pg" /> </txp:chh_if_data> &bull; <txp:site_name />
-        </txp:if_section>
-      </txp:if_category>
-    </txp:if_article_list>
-    <txp:if_individual_article>
-      <txp:title /> &bull; <txp:site_name />
-    </txp:if_individual_article>
-  <txp:else />
-    <txp:site_name />: <txp:error_status />
-  </txp:if_status>
-</title>
+	<meta charset="utf-8">
+	<title>
+		<txp:if_status>
+			<txp:if_article_list>
+				<txp:if_category>
+					<txp:category title="1" /> <txp:chh_if_data><txp:page_url type="pg" /> </txp:chh_if_data>&bull; <txp:site_name />
+				<txp:else />
+					<txp:if_section name=",default">
+						<txp:site_name />
+					<txp:else />
+						<txp:section title="1" /> <txp:chh_if_data><txp:page_url type="pg" /> </txp:chh_if_data> &bull; <txp:site_name />
+					</txp:if_section>
+				</txp:if_category>
+			</txp:if_article_list>
+			<txp:if_individual_article>
+				<txp:title /> &bull; <txp:site_name />
+			</txp:if_individual_article>
+		<txp:else />
+			<txp:site_name />: <txp:error_status />
+		</txp:if_status>
+	</title>
 
-<meta name="robots" content="index, follow, noodp, noydir">
+	<txp:if_individual_article>
+		<txp:if_keywords>
+			<meta name="keywords" content="<txp:keywords />">
+		<txp:else />
+			<meta name="keywords" content="<txp:variable name="meta_keywords" />">
+		</txp:if_keywords>
+		<meta name="description" content="<txp:etz_striptags><txp:rss_auto_excerpt showlinkwithexcerpt="0" /></txp:etz_striptags>">
+	</txp:if_individual_article>
 
-<txp:if_section name="">
-  <link rel="canonical" href="<txp:site_url />">
-<txp:else />
-  <txp:if_individual_article>
-    <link rel="canonical" href="<txp:permlink />">
-  <txp:else />
-    <link rel="canonical" href="<txp:section url='1' />">
-  </txp:if_individual_article>
-</txp:if_section>
+	<meta name="generator" content="Textpattern CMS">
+	<meta name="robots" content="index, follow, noodp, noydir">
 
-<meta name="generator" content="Textpattern CMS">
+	<txp:if_section name="">
+		<link rel="canonical" href="<txp:site_url />">
+	<txp:else />
+		<txp:if_individual_article>
+			<link rel="canonical" href="<txp:permlink />">
+		<txp:else />
+			<link rel="canonical" href="<txp:section url='1' />">
+		</txp:if_individual_article>
+	</txp:if_section>
 
-<txp:if_individual_article>
-  <txp:if_keywords>
-    <meta name="keywords" content="<txp:keywords />">
-  <txp:else />
-    <meta name="keywords" content="<txp:variable name="meta_keywords" />">
-  </txp:if_keywords>
+	<txp:feed_link flavor="atom" format="link" label="Atom" section="" />
+	<txp:feed_link flavor="rss" format="link" label="RSS" section="" />
 
-  <meta name="description" content="<txp:etz_striptags><txp:rss_auto_excerpt showlinkwithexcerpt="0" /></txp:etz_striptags>">
-</txp:if_individual_article>
-   
-<txp:feed_link flavor="atom" format="link" label="Atom" section="" />
-<txp:feed_link flavor="rss" format="link" label="RSS" section="" />
-   
-<link rel="stylesheet" media="screen" href="<txp:css name="bootstrap_min" />">  
-<link rel="stylesheet" media="screen" href="<txp:css name="minimum_style" />">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
-
+	<link rel="stylesheet" media="screen" href="<txp:css name="bootstrap_min" />">  
+	<link rel="stylesheet" media="screen" href="<txp:css name="minimum_style" />">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
 </head>
