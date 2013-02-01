@@ -11,7 +11,7 @@
 
 	<div class="container" id="content">
 		<div role="main" class="row">
-			<div class="span8 center">
+			<div class="span9 center">
 				<txp:output_form form="minimum_header" />
 				<div class="post">
 					<h1 class="error-status"><txp:error_status /></h1>

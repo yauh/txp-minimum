@@ -13,7 +13,7 @@ Minimum enables you to publish your writings, but it does not allow you to:
 * hook up to social networks or have sharing buttons
 * show off a massive link collection
 
-Minimum is a theme that lets you write. What else would you need?
+Minimum is a theme that lets you write. It embraces "the golden ratio":http://alistapart.com/article/more-meaningful-typography. What else would you need?
 
 h2. Installation
 
