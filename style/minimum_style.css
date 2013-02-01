@@ -57,6 +57,10 @@ header a:hover {
 	float: none;
 }
 
+.footnote {
+	font-size: 13px;
+}
+
 [role="article"] {
 	margin: 20px 0 0 0;
 	padding: 20px 0 20px 0;
@@ -85,7 +89,7 @@ time {
 	padding: 0 20px 20px 20px;
 	font-family: "Average", serif;
 	font-size: 20px;
-	line-height: 35px;
+	line-height: 1.75;
 }
 
 .body img {
