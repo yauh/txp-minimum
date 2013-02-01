@@ -1,14 +1,8 @@
 body { 
 	background-color: #fafafa;
 	font-family: serif;
-}
-
-p {
-	padding: 0 0 10px 0;
-}
-
-strong {
-	font-weight: bold;
+	font-size: 18px;
+	line-height: 1.618; /* golden ratio */
 }
 
 a,
@@ -29,24 +23,6 @@ header {
 	height: 50px;
 }
 
-header h1 {
-	text-align: center;
-	font-size: 40px;
-	margin: 60px 0 4px 0;
-	font-family: "Ovo", serif;
-	color: #000;
-	text-transform: uppercase;
-}
-
-header h2 {
-	text-align: center;
-	font-size: 18px;
-	margin: 1px 0 1px 0;
-	font-family: "Ovo", serif;
-	color: #000;
-	text-transform: uppercase;
-}
-
 header a,
 header a:hover {
 	border: 0;
@@ -63,29 +39,10 @@ header a:hover {
 	border-bottom: 1px solid #c8c8c8;
 }
 
-[role="article"] h1 {
-	padding: 20px 20px 0 20px;
-	font-size: 30px;
-	font-family: "Ovo", serif;
-	color: #000;
-	text-align: center;
-}
-
-time {
-	font-weight: bold;
-	padding: 0 0 20px 0;
-	margin: 0;
-	font-size: 14px;
-	text-align: center;
-	font-style: italic;
-}
-
 .body {
 	margin: 0;
 	padding: 0 20px 20px 20px;
 	font-family: "Average", serif;
-	font-size: 20px;
-	line-height: 35px;
 }
 
 .body img {
@@ -112,16 +69,193 @@ time {
 	text-align: right;
 }
 
-ul,
-ol {
-	margin: 10px 0 10px 40px;
-}
-
-li {
-	padding-bottom: 10px;
-	line-height: 30px;
-}
-
 footer {
 	padding: 1px;
+}
+
+
+/* Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Ovo", serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 1.2;
+	margin: 0 0 .563em 0;
+}
+
+h2 {
+	font-size: 28px;
+	line-height: 1.3;
+	margin: 0 0 .643em 0;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 1.4;
+	margin: 0 0 .75em 0;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 1.5;
+	margin: 0 0 .9em 0;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 1.618; /* golden ratio */
+	margin: 0 0 1em 0;
+}
+
+h6 {
+	font-size: 18px;
+	line-height: 1.618; /* golden ratio */
+	margin: 0 0 1em 0;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 40px;
+	line-height: 1.1;
+	margin: 1.5em 0 .25em 0;
+	text-transform: uppercase;
+}
+
+header h3 {
+	text-align: center;
+	margin: 1px 0 1px 0;
+	text-transform: uppercase;
+}
+
+[role="article"] h1 {
+	padding: 20px 20px 0 20px;
+	text-align: center;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+blockquote {
+	font-size: 20px;
+	line-height: 1.5;
+	font-family: "Ovo", serif;
+	font-style: italic;
+	margin: 0 0 .9em 0;
+}
+
+/* override Bootstrap */
+blockquote p {
+	font-size: 20px;
+	line-height: 1.618; /* golden ratio */
+}
+
+/* set consistent quote types */
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+address {
+	line-height: 1.618; /* golden ratio */
+	margin: 0 0 1em 0;
+}
+
+figcaption,
+tfoot,
+small,
+.footnote {
+	font-size: 13px;
+}
+
+
+/* Lists
+ ========================================================================== */
+
+/* address paddings set differently */
+menu,
+ol,
+ul {
+	margin: 0 0 1em 0;;
+	padding: 0 0 0 2em;
+}
+
+/* remove margins from nested lists */
+ul ul,
+ol ol,
+dl dl {
+	margin: 0;
+}
+
+li,
+dt,
+dd {
+	line-height: 1.618; /* golden ratio */
+}
+
+dd {
+	margin: 0 0 0 2em;
+}
+
+dt {
+	font-style: italic;
+}
+
+
+/* Tables
+   ========================================================================== */
+
+/* allow overflow scroll on tables */
+.tabular-data {
+	overflow-x: auto;
+	margin-bottom: 1em;
+}
+
+/* consistent tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+caption {
+	font-style: italic;
+	text-align: left;
+	margin-bottom: .5em;
+}
+
+/* make table cells align top and left by default */
+th,
+td {
+	vertical-align: top;
+	text-align: left;
+	border-bottom: solid 1px #ccc;
+	padding: .333em .333em .333em 0;
+}
+
+th:last-child,
+td:last-child {
+	padding-right: 0;
+}
+
+thead th,
+thead td {
+	border-bottom: solid 2px #ccc;
+}
+
+tfoot th,
+tfoot td {
+	border-bottom: 0;
+	padding: .462em .462em .462em 0;
+}
+
+tfoot:last-child {
+	padding-right: 0;
 }
