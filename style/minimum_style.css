@@ -5,10 +5,6 @@ body {
 	line-height: 1.618; /* golden ratio */
 }
 
-strong {
-	font-weight: bold;
-}
-
 a,
 a:hover {
 	color: #000;
@@ -71,16 +67,6 @@ header a:hover {
 
 .newer {
 	text-align: right;
-}
-
-ul,
-ol {
-	margin: 10px 0 10px 40px;
-}
-
-li {
-	padding-bottom: 10px;
-	line-height: 30px;
 }
 
 footer {
@@ -187,6 +173,39 @@ tfoot,
 small,
 .footnote {
 	font-size: 13px;
+}
+
+
+/* Lists
+ ========================================================================== */
+
+/* address paddings set differently */
+menu,
+ol,
+ul {
+	margin: 0 0 1em 0;;
+	padding: 0 0 0 2em;
+}
+
+/* remove margins from nested lists */
+ul ul,
+ol ol,
+dl dl {
+	margin: 0;
+}
+
+li,
+dt,
+dd {
+	line-height: 1.618; /* golden ratio */
+}
+
+dd {
+	margin: 0 0 0 2em;
+}
+
+dt {
+	font-style: italic;
 }
 
 
