@@ -1,6 +1,8 @@
 body { 
 	background-color: #fafafa;
 	font-family: serif;
+	font-size: 18px;
+	line-height: 1.618; /* golden ratio */
 }
 
 p {
@@ -40,7 +42,6 @@ header h1 {
 
 header h2 {
 	text-align: center;
-	font-size: 18px;
 	margin: 1px 0 1px 0;
 	font-family: "Ovo", serif;
 	color: #000;
@@ -88,8 +89,6 @@ time {
 	margin: 0;
 	padding: 0 20px 20px 20px;
 	font-family: "Average", serif;
-	font-size: 20px;
-	line-height: 1.75;
 }
 
 .body img {
