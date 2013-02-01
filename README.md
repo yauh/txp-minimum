@@ -1,7 +1,7 @@
 txp-minimum
 ===========
 
-Minimum theme for [Textpattern CMS](http://textpattern.com)
+Minimum theme for [Textpattern CMS](http://textpattern.com). See a [working demo here](http://minimum.yauh.de).
 
 A huge *Thank You* goes to [Amit Varia](http://amitvaria.com/), who inspired this theme.
 
