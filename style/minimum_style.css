@@ -6,7 +6,7 @@ body {
 }
 
 p {
-	padding: 0 0 10px 0;
+	margin: 0 0 1em 0;
 }
 
 strong {
@@ -58,6 +58,9 @@ header a:hover {
 	float: none;
 }
 
+figcaption,
+tfoot,
+small,
 .footnote {
 	font-size: 13px;
 }
@@ -127,4 +130,56 @@ li {
 
 footer {
 	padding: 1px;
+}
+
+
+/* Tables
+   ========================================================================== */
+
+/* allow overflow scroll on tables */
+.tabular-data {
+	overflow-x: auto;
+	margin-bottom: 1em;
+}
+
+/* consistent tables */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+caption {
+	font-style: italic;
+	text-align: left;
+	margin-bottom: .5em;
+}
+
+/* make table cells align top and left by default */
+th,
+td {
+	vertical-align: top;
+	text-align: left;
+	border-bottom: solid 1px #ccc;
+	padding: .333em .333em .333em 0;
+}
+
+th:last-child,
+td:last-child {
+	padding-right: 0;
+}
+
+thead th,
+thead td {
+	border-bottom: solid 2px #ccc;
+}
+
+tfoot th,
+tfoot td {
+	border-bottom: 0;
+	padding: .46153846153846em .46153846153846em .46153846153846em 0;
+}
+
+tfoot:last-child {
+	padding-right: 0;
 }
