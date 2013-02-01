@@ -5,10 +5,6 @@ body {
 	line-height: 1.618; /* golden ratio */
 }
 
-p {
-	margin: 0 0 1em 0;
-}
-
 strong {
 	font-weight: bold;
 }
@@ -31,23 +27,6 @@ header {
 	height: 50px;
 }
 
-header h1 {
-	text-align: center;
-	font-size: 40px;
-	margin: 60px 0 4px 0;
-	font-family: "Ovo", serif;
-	color: #000;
-	text-transform: uppercase;
-}
-
-header h2 {
-	text-align: center;
-	margin: 1px 0 1px 0;
-	font-family: "Ovo", serif;
-	color: #000;
-	text-transform: uppercase;
-}
-
 header a,
 header a:hover {
 	border: 0;
@@ -58,47 +37,10 @@ header a:hover {
 	float: none;
 }
 
-figcaption,
-tfoot,
-small,
-.footnote {
-	font-size: 13px;
-}
-
 [role="article"] {
 	margin: 20px 0 0 0;
 	padding: 20px 0 20px 0;
 	border-bottom: 1px solid #c8c8c8;
-}
-
-[role="article"] h1 {
-	padding: 20px 20px 0 20px;
-	font-size: 30px;
-	font-family: "Ovo", serif;
-	color: #000;
-	text-align: center;
-}
-
-time {
-	font-weight: bold;
-	padding: 0 0 20px 0;
-	margin: 0;
-	font-size: 14px;
-	text-align: center;
-	font-style: italic;
-}
-
-blockquote {
-	font-size: 20px;
-	font-style: italic;
-	margin: 0 0 .9em 0;
-	border-left: 3px solid #cccccc;
-	padding: 0 0 0 .9em;
-}
-
-blockquote p {
-	font-size: 20px;
-	line-height: 1.618; /* golden ratio */
 }
 
 .body {
@@ -143,6 +85,72 @@ li {
 
 footer {
 	padding: 1px;
+}
+
+
+/* Typography
+   ========================================================================== */
+
+header h1 {
+	text-align: center;
+	font-size: 40px;
+	margin: 60px 0 4px 0;
+	font-family: "Ovo", serif;
+	color: #000;
+	text-transform: uppercase;
+}
+
+header h2 {
+	text-align: center;
+	margin: 1px 0 1px 0;
+	font-family: "Ovo", serif;
+	color: #000;
+	text-transform: uppercase;
+}
+
+[role="article"] h1 {
+	padding: 20px 20px 0 20px;
+	font-size: 30px;
+	font-family: "Ovo", serif;
+	color: #000;
+	text-align: center;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+blockquote {
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 .9em 0;
+}
+
+/* override Bootstrap */
+blockquote p {
+	font-size: 20px;
+	line-height: 1.618; /* golden ratio */
+}
+
+/* set consistent quote types */
+q {
+	quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+time {
+	font-weight: bold;
+	padding: 0 0 20px 0;
+	margin: 0;
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+}
+
+figcaption,
+tfoot,
+small,
+.footnote {
+	font-size: 13px;
 }
 
 
