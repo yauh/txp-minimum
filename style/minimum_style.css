@@ -88,6 +88,19 @@ time {
 	font-style: italic;
 }
 
+blockquote {
+	font-size: 20px;
+	font-style: italic;
+	margin: 0 0 .9em 0;
+	border-left: 3px solid #cccccc;
+	padding: 0 0 0 .9em;
+}
+
+blockquote p {
+	font-size: 20px;
+	line-height: 1.618; /* golden ratio */
+}
+
 .body {
 	margin: 0;
 	padding: 0 20px 20px 20px;
