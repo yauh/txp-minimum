@@ -3,9 +3,7 @@
 <txp:permlink><txp:title /></txp:permlink>
 </h1>
 <div class="body">
-<p class="time">
-<txp:posted />
-</p>
+<time datetime="<txp:posted format='iso8601' />"><txp:posted /></time>
 <txp:body />
 </div>
 </div>
