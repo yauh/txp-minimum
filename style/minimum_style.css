@@ -159,6 +159,11 @@ q {
 	quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
+address {
+	line-height: 1.618; /* golden ratio */
+	margin: 0 0 1em 0;
+}
+
 time {
 	font-weight: bold;
 	padding: 0 0 20px 0;
