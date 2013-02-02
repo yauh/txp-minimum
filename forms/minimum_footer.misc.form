@@ -1,5 +1,3 @@
-<footer role="contentinfo">
-	<div class="span9 footer center">
-			<p><small>Powered by <a href="http://textpattern.com/" rel="external" title="Go to the Textpattern CMS homepage">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external" title="Go to the Minimum theme homepage">Minimum</a> by <a href="http://yauh.de" rel="external" title="Go to the theme author’s homepage">Stephan Hochhaus</a>.</small><p>
-	</div>
+<footer role="contentinfo" class="span9">
+	<p><small>Powered by <a href="http://textpattern.com/" rel="external" title="Go to the Textpattern CMS homepage">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external" title="Go to the Minimum theme homepage">Minimum</a> by <a href="http://yauh.de" rel="external" title="Go to the theme author’s homepage">Stephan Hochhaus</a>.</small><p>
 </footer>

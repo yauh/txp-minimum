@@ -11,46 +11,34 @@ body {
 	background-color: #fafafa;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
-
 header {
-	margin: 0 0 30px 0;
+	padding: 2em 0;
 	width: 100%;
 }
 
-.center {
+.span9 {
 	margin: 0 auto;
 	float: none;
 }
 
-[role="article"] {
-	margin: 1em 0 0 0;
-	padding: 1em 0 1em 0;
-	border-bottom: 1px solid #c8c8c8;
+article {
+	padding: 2em 0 1em;
+	border-top: 1px solid #ccc;
 }
 
-.body {
-	margin: 0;
-	padding: 0 1em 1em 1em;
-	font-family: "Average", serif;
-}
-
-.body img {
+img {
+	max-width: 100%;
+	height: auto;
 	margin: 1em auto 1em auto;
 	display: block;
 	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
 	box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
 }
 
-.footer {
-	text-align: center;
-}
-
 footer {
-	padding: 1px;
+	text-align: center;
+	padding: 2em 0 1em;
+	border-top: 1px solid #ccc;
 }
 
 
@@ -79,7 +67,7 @@ header a:hover {
    ========================================================================== */
 
 body { 
-	font-family: serif;
+	font-family: "Average", serif;
 	font-size: 18px;
 	line-height: 1.618; /* golden ratio */
 }
@@ -130,6 +118,7 @@ h6 {
 
 header h1,
 header h4 {
+	margin: 0;
 	text-transform: uppercase;
 }
 
@@ -241,17 +230,12 @@ dt {
 /* Tables
    ========================================================================== */
 
-/* allow overflow scroll on tables */
-.tabular-data {
-	overflow-x: auto;
-	margin-bottom: 1em;
-}
-
 /* consistent tables */
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
+	margin-bottom: 1em;
 }
 
 caption {

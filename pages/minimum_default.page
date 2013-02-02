@@ -8,18 +8,19 @@
 <txp:output_form form="minimum_htmlhead" />
 
 <body>
+	<div class="container">
+		<div class="row">
 
-	<div class="container" id="content">
-		<div role="main" class="row">
-			<div class="span9 center">
-				<txp:output_form form="minimum_header" />
+			<txp:output_form form="minimum_header" />
+
+			<div role="main" class="span9" aria-label="Main content">
 
 				<txp:if_individual_article>
-					<txp:article form="minimum_post" limit="1" pgonly="0" status="live"/>
+					<txp:article form="minimum_post" limit="1" pgonly="0" status="live" />
 				</txp:if_individual_article>
 
 				<txp:if_article_list>
-					<txp:article form="minimum_post" limit="5" pgonly="0" status="live"/>
+					<txp:article form="minimum_post" limit="5" pgonly="0" status="live" />
 
 					<txp:variable name="has_np" value='<txp:older /><txp:newer />' />
 					<txp:if_variable name="has_np" value="">
@@ -48,14 +49,12 @@
 
 			</div>
 
-			<p id="paginator"></p>
+			<txp:output_form form="minimum_footer" />
 
 		</div>
 	</div>
 
-<txp:output_form form="minimum_footer" />
-
-<txp:output_form form="minimum_javascript" />
+	<txp:output_form form="minimum_javascript" />
 
 </body>
 </html>
