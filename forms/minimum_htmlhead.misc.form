@@ -31,7 +31,12 @@
 	</txp:if_individual_article>
 
 	<meta name="generator" content="Textpattern CMS">
-	<meta name="robots" content="index, follow, noodp, noydir">
+
+	<txp:if_status status="200">
+		<meta name="robots" content="index, follow, noodp, noydir">
+	<txp:else />
+		<meta name="none">
+	</txp:if_status>
 
 	<txp:if_section name="">
 		<link rel="canonical" href="<txp:site_url />">
