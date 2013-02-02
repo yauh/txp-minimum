@@ -75,6 +75,8 @@ pre. This is an example of a non-code
 
 h3. Pre-formatted code blocks
 
+In order to activate <a href="http://code.google.com/p/google-code-prettify/" rel="external" title="Go to the Google Code Prettify project page">Google Code Prettify</a>, use the following Textile markup @bc(prettyprint linenums).@
+
 bc(prettyprint linenums). <section role="alert" class="alert alert-error fade in">
     <a class="close" data-dismiss="alert">&amp;times;</a>
     <h3>Message pane</h3>
