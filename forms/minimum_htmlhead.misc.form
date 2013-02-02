@@ -48,5 +48,6 @@
 
 	<link rel="stylesheet" media="screen" href="<txp:css name="bootstrap_min" />">  
 	<link rel="stylesheet" media="screen" href="<txp:css name="minimum_style" />">
+	<link rel="stylesheet" media="screen" href="<txp:css name="google_code_prettify />">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
 </head>

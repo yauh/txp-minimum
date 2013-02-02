@@ -79,7 +79,7 @@ pre. This is an example of a non-code
 
 h3. Pre-formatted code blocks
 
-bc. <section role="alert" class="alert alert-error fade in">
+bc(prettyprint linenums). <section role="alert" class="alert alert-error fade in">
     <a class="close" data-dismiss="alert">&amp;times;</a>
     <h3>Message pane</h3>
     <p>Error message goes here.</p>
