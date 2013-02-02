@@ -22,10 +22,6 @@ This text has a reference in the footnote[1].
 
 fn1. Here is the footnote.
 
-h3. Addresses
-
-notextile. <address>Address: somewhere, world</address>
-
 h2. Text alignment
 
 h3. Text ranged left
