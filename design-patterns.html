@@ -8,6 +8,7 @@
 	<meta name="generator" content="Textpattern CMS">
 	<link rel="stylesheet" media="screen" href="style/bootstrap_min.css">  
 	<link rel="stylesheet" media="screen" href="style/minimum_style.css">
+	<link rel="stylesheet" media="screen" href="style/google_code_prettify.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
 </head>
 
@@ -20,7 +21,7 @@
 				<header role="banner">
 					<hgroup>
 						<h1><a rel="home" href="http://minimum.yauh.de/">Minimum Theme for Textpattern</a></h1>
-						<h3>If all you want to do is write.</h3>
+						<h4>If all you want to do is write.</h4>
 					</hgroup>
 				</header>
 
@@ -84,7 +85,7 @@
     pre-formatted text block
         preserving white spaces</pre>
         				<h3>Pre-formatted code blocks</h3>
-        				<pre><code>&lt;section role=&quot;alert&quot; class=&quot;alert alert-error fade in&quot;&gt;
+        				<pre class="prettyprint linenums"><code>&lt;section role=&quot;alert&quot; class=&quot;alert alert-error fade in&quot;&gt;
     &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&amp;amp;times;&lt;/a&gt;
     &lt;h3&gt;Message pane&lt;/h3&gt;
     &lt;p&gt;Error message goes here.&lt;/p&gt;
@@ -93,7 +94,6 @@
 						<blockquote cite="http://textpattern.com/">
 							<p>Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 						</blockquote>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
 						<h2>Embedded content</h2>
 						<h3>Images</h3>
 						<p><img src="http://placehold.it/160/fabc2b/333333" title="Alt text" alt="Alt text" /></p>
@@ -190,12 +190,17 @@
 
 	<footer role="contentinfo">
 		<div class="span9 footer center">
-			<p>Powered by <a href="http://textpattern.com/" rel="external">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external">Minimum</a> by <a href="http://yauh.de" rel="external">Stephan Hochhaus</a>.<p>
+			<p><small>Powered by <a href="http://textpattern.com/" rel="external" title="Go to the Textpattern CMS homepage">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external" title="Go to the Minimum theme homepage">Minimum</a> by <a href="http://yauh.de" rel="external" title="Go to the theme author’s homepage">Stephan Hochhaus</a>.</small><p>
 		</div>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+	<script>
+		$(function () {
+			window.prettyPrint && prettyPrint();
+		});
+	</script>
 </body>
 </html>
