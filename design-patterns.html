@@ -8,26 +8,28 @@
 	<meta name="generator" content="Textpattern CMS">
 	<link rel="stylesheet" media="screen" href="style/bootstrap_min.css">  
 	<link rel="stylesheet" media="screen" href="style/minimum_style.css">
+	<link rel="stylesheet" media="screen" href="style/google_code_prettify.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
 <body>
-	<div class="container" id="content">
+	<div class="container">
+		<div class="row">
 
-		<div role="main" class="row">
-			<div class="span9 center">
+			<header role="banner" class="span9">
+				<hgroup>
+					<h1><a rel="home" href="http://minimum.yauh.de/">Minimum Theme for Textpattern</a></h1>
+					<h4>If all you want to do is write.</h4>
+				</hgroup>
+			</header>
 
-				<header role="banner">
-					<hgroup>
-						<h1><a rel="home" href="http://minimum.yauh.de/">Minimum Theme for Textpattern</a></h1>
-						<h3>If all you want to do is write.</h3>
-					</hgroup>
-				</header>
+			<div role="main" class="span9" aria-label="Main content">
 
 				<article role="article" itemscope itemtype="http://schema.org/Article">
 
-					<h1 itemprop="name"><a rel="bookmark" href="http://txp.yauh.de/index.php?id=10">Design patterns&#160;page</a></h1>
-					<h4 class="time"><time datetime="2013-02-01T13:44:55Z" itemprop="datePublished">Feb  1, 02:44 PM</time></h4>
+					<h1 itemprop="name"><a rel="bookmark" href="#">Design patterns page</a></h1>
+					<h4><time datetime="2013-02-01T13:44:55Z" itemprop="datePublished">Feb  1, 02:44 PM</time></h4>
 
 					<div class="body" itemprop="articleBody">
 						<p>Article containing examples of various Textile inline and block elements that should be considered and styled within any theme.</p>
@@ -42,8 +44,6 @@
 						<p>Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci.</p>
 						<p>This text has a reference in the footnote<sup id="fnrev1087899704510bc6efd1072" class="footnote"><a href="#fn1087899704510bc6efd1072">1</a></sup>.</p>
 						<p id="fn1087899704510bc6efd1072" class="footnote"><sup>1</sup> Here is the footnote.</p>
-						<h3>Addresses</h3>
-						<address>Address: somewhere, world</address>
 						<h2>Text alignment</h2>
 						<h3>Text ranged left</h3>
 						<p style="text-align:left;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sit amet elit vitae arcu interdum ullamcorper. Nullam ultrices, nisi quis scelerisque convallis, augue neque tempor enim, et mattis justo nibh eu elit.</p>
@@ -84,7 +84,8 @@
     pre-formatted text block
         preserving white spaces</pre>
         				<h3>Pre-formatted code blocks</h3>
-        				<pre><code>&lt;section role=&quot;alert&quot; class=&quot;alert alert-error fade in&quot;&gt;
+        				<p>In order to activate <a href="http://code.google.com/p/google-code-prettify/" rel="external" title="Go to the Google Code Prettify project page">Google Code Prettify</a>, use the following Textile markup <code>bc(prettyprint linenums).</code> (the <code>linenums</code> class is optional).</p>
+        				<pre class="prettyprint linenums"><code>&lt;section role=&quot;alert&quot; class=&quot;alert alert-error fade in&quot;&gt;
     &lt;a class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&amp;amp;times;&lt;/a&gt;
     &lt;h3&gt;Message pane&lt;/h3&gt;
     &lt;p&gt;Error message goes here.&lt;/p&gt;
@@ -93,16 +94,15 @@
 						<blockquote cite="http://textpattern.com/">
 							<p>Here is an example of a block quote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 						</blockquote>
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
 						<h2>Embedded content</h2>
 						<h3>Images</h3>
-						<p><img src="http://placehold.it/160/fabc2b/333333" title="Alt text" alt="Alt text" /></p>
+						<p><img src="http://placehold.it/160/cccccc/333333" title="Alt text" alt="Alt text" /></p>
 						<h3>Left ranged image</h3>
-						<p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img src="http://placehold.it/160/fabc2b/333333" class="align-left" title="160x160px placeholder" alt="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+						<p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img src="http://placehold.it/160/cccccc/333333" class="align-left" title="160x160px placeholder" alt="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
 						<h3>Right ranged image</h3>
-						<p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img src="http://placehold.it/160/fabc2b/333333" class="align-right" title="160x160px placeholder" alt="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+						<p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img src="http://placehold.it/160/cccccc/333333" class="align-right" title="160x160px placeholder" alt="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
 						<h3>Centred image</h3>
-						<p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img src="http://placehold.it/160/fabc2b/333333" class="align-center" title="160x160px placeholder" alt="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
+						<p>Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis. <img src="http://placehold.it/160/cccccc/333333" class="align-center" title="160x160px placeholder" alt="160x160px placeholder" /> Quisque ultrices gravida pede. Mauris accumsan vulputate tellus. Phasellus condimentum bibendum dolor. Mauris sed ipsum. Phasellus in diam. Nam sapien ligula, consectetuer id, hendrerit in, cursus sed, leo. Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet. Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices, orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In lectus nisl, porttitor eget, fermentum et, viverra a, odio. Sed semper. Praesent vulputate nibh eget nisi. Sed ligula. Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel ligula. Sed felis.</p>
 						<h2>Lists</h2>
 						<ol>
 							<li>this is an example</li>
@@ -183,19 +183,29 @@
 
 				</article>
 
-			</div>
-		</div>
+				<article role="article" itemscope itemtype="http://schema.org/Article">
+					<h1 itemprop="name"><a rel="bookmark" href="#">Yet another article</a></h1>
+					<h4><time datetime="2013-01-31T10:51:34Z" itemprop="datePublished">2 days ago</time></h4>
+					<div class="body" itemprop="articleBody">
+						<p>Just an example of another document, so we can check formatting works OK.</p>
+					</div>
+				</article>
 
+			</div>
+
+			<footer role="contentinfo" class="span9">
+				<p><small>Powered by <a href="http://textpattern.com/" rel="external" title="Go to the Textpattern CMS homepage">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external" title="Go to the Minimum theme homepage">Minimum</a> by <a href="http://yauh.de" rel="external" title="Go to the theme author’s homepage">Stephan Hochhaus</a>.</small><p>
+			</footer>
+
+		</div>
 	</div>
 
-	<footer role="contentinfo">
-		<div class="span9 footer center">
-			<p>Powered by <a href="http://textpattern.com/" rel="external">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external">Minimum</a> by <a href="http://yauh.de" rel="external">Stephan Hochhaus</a>.<p>
-		</div>
-	</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
+	<script>
+		$(function () {
+			window.prettyPrint && prettyPrint();
+		});
+	</script>
 </body>
 </html>
