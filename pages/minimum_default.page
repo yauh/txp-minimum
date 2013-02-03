@@ -12,7 +12,7 @@
 			<div role="main" class="span9" aria-label="Main content">
 				<txp:if_individual_article>
 
-					<txp:article form="minimum_post" limit="1" status="live" />
+					<txp:article form="minimum_post" limit="1" />
 
 					<txp:variable name="more" value='<txp:link_to_prev /><txp:link_to_next />' />
 					<txp:variable name="prev" value='<txp:link_to_prev />' />
@@ -37,7 +37,7 @@
 
 				<txp:else />
 
-					<txp:article form="minimum_post" limit="5" status="live" />
+					<txp:article form="minimum_post" limit="5" />
 
 					<txp:variable name="more" value='<txp:older /><txp:newer />' />
 					<txp:variable name="prev" value='<txp:older />' />
