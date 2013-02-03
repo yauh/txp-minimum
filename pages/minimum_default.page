@@ -10,39 +10,57 @@
 			<txp:output_form form="minimum_header" />
 
 			<div role="main" class="span9" aria-label="Main content">
-
 				<txp:if_individual_article>
-					<txp:article form="minimum_post" limit="1" pgonly="0" status="live" />
-				</txp:if_individual_article>
 
-				<txp:if_article_list>
+					<txp:article form="minimum_post" limit="1" pgonly="0" status="live" />
+
+					<txp:variable name="more" value='<txp:link_to_prev /><txp:link_to_next />' />
+					<txp:variable name="prev" value='<txp:link_to_prev />' />
+					<txp:variable name="next" value='<txp:link_to_next />' />
+
+					<txp:if_variable name="more" value="">
+					<txp:else />
+						<nav role="navigation" id="paginator" aria-label="Article navigation">
+
+							<txp:if_variable name="prev" value="">
+							<txp:else />
+								<a id="paginator-l" href="<txp:link_to_prev />" title="<txp:prev_title />" rel="prev">&#8592; <txp:text item="older" /></a>
+							</txp:if_variable>
+
+							<txp:if_variable name="next" value="">
+							<txp:else />
+								<a id="paginator-r" href="<txp:link_to_next />" title="<txp:next_title />" rel="next"><txp:text item="newer" /> &#8594;</a>
+							</txp:if_variable>
+
+						</nav>
+					</txp:if_variable>
+
+				<txp:else />
+
 					<txp:article form="minimum_post" limit="5" pgonly="0" status="live" />
 
-					<txp:variable name="has_np" value='<txp:older /><txp:newer />' />
-					<txp:if_variable name="has_np" value="">
+					<txp:variable name="more" value='<txp:older /><txp:newer />' />
+					<txp:variable name="prev" value='<txp:older />' />
+					<txp:variable name="next" value='<txp:newer />' />
+
+					<txp:if_variable name="more" value="">
 					<txp:else />
-						<div class="row">
+						<nav role="navigation" id="paginator" aria-label="Page navigation">
 
-							<div class="span4">
-								<txp:variable name="older" value='<txp:older />' />
-								<txp:if_variable name="older" value="">
-								<txp:else />
-									<div class="nav-links older">&#8592; <txp:older><txp:text item="older" /></txp:older></div>
-								</txp:if_variable>
-							</div>
+							<txp:if_variable name="prev" value="">
+							<txp:else />
+								<a id="paginator-l" href="<txp:older />" title="<txp:text item='older' />" rel="prev">&#8592; <txp:text item="older" /></a>
+							</txp:if_variable>
 
-							<div class="span4">
-								<txp:variable name="newer" value='<txp:newer />' />
-								<txp:if_variable name="newer" value="">
-								<txp:else />
-									<div class="nav-links newer"><txp:newer><txp:text item="newer" /></txp:newer> &#8594;</div>
-								</txp:if_variable>
-							</div>
+							<txp:if_variable name="next" value="">
+							<txp:else />
+								<a id="paginator-r" href="<txp:newer />" title="<txp:text item='newer' />" rel="next"><txp:text item="newer" /> &#8594;</a>
+							</txp:if_variable>
 
-						</div>
+						</nav>
 					</txp:if_variable>
-				</txp:if_article_list>
 
+				</txp:if_individual_article>
 			</div>
 
 			<txp:output_form form="minimum_footer" />
