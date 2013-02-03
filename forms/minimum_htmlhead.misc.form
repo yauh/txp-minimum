@@ -24,10 +24,10 @@
 	<txp:if_individual_article>
 		<txp:if_keywords>
 			<meta name="keywords" content="<txp:keywords />">
-		<txp:else />
-			<meta name="keywords" content="<txp:variable name="meta_keywords" />">
 		</txp:if_keywords>
-		<meta name="description" content="<txp:etz_striptags><txp:rss_auto_excerpt showlinkwithexcerpt="0" /></txp:etz_striptags>">
+		<meta name="description" content="<txp:etz_striptags><txp:rss_auto_excerpt showlinkwithexcerpt='0' /></txp:etz_striptags>">
+	<txp:else />
+		<meta name="description" content="<txp:site_slogan />">
 	</txp:if_individual_article>
 
 	<meta name="generator" content="Textpattern CMS">
