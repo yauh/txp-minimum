@@ -1,29 +1,25 @@
-<txp:if_plugin name="aks_header" version="0.3">
-	<txp:aks_header strip="1" gzip="1" />
-</txp:if_plugin>
-
 <!DOCTYPE html>
 <html lang="<txp:lang />">
 
 <txp:output_form form="minimum_htmlhead" />
 
 <body>
+	<div class="container">
+		<div class="row">
 
-	<div class="container" id="content">
-		<div role="main" class="row">
-			<div class="span9 center">
-				<txp:output_form form="minimum_header" />
-				<div class="post">
-					<h1 class="error-status"><txp:error_status /></h1>
-					<p class="error-msg"><txp:error_message /></p>
-				</div>
+			<txp:output_form form="minimum_header" />
+
+			<div role="main" class="span9" aria-label="Main content">
+				<h1 class="error-status"><txp:error_status /></h1>
+				<p class="error-msg"><txp:error_message /></p>
 			</div>
+
+			<txp:output_form form="minimum_footer" />
+
 		</div>
 	</div>
 
-<txp:output_form form="minimum_footer" />
-
-<txp:output_form form="minimum_javascript" />
+	<txp:output_form form="minimum_javascript" />
 
 </body>
 </html>

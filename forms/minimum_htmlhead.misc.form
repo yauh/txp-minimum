@@ -24,24 +24,21 @@
 	<txp:if_individual_article>
 		<txp:if_keywords>
 			<meta name="keywords" content="<txp:keywords />">
-		<txp:else />
-			<meta name="keywords" content="<txp:variable name="meta_keywords" />">
 		</txp:if_keywords>
-		<meta name="description" content="<txp:etz_striptags><txp:rss_auto_excerpt showlinkwithexcerpt="0" /></txp:etz_striptags>">
+		<meta name="description" content="<txp:etz_striptags><txp:rss_auto_excerpt showlinkwithexcerpt='0' /></txp:etz_striptags>">
+		<link rel="canonical" href="<txp:permlink />">
+	<txp:else />
+		<meta name="description" content="<txp:site_slogan />">
+		<link rel="canonical" href="<txp:site_url />">
 	</txp:if_individual_article>
 
 	<meta name="generator" content="Textpattern CMS">
-	<meta name="robots" content="index, follow, noodp, noydir">
 
-	<txp:if_section name="">
-		<link rel="canonical" href="<txp:site_url />">
+	<txp:if_status status="200">
+		<meta name="robots" content="index, follow, noodp, noydir">
 	<txp:else />
-		<txp:if_individual_article>
-			<link rel="canonical" href="<txp:permlink />">
-		<txp:else />
-			<link rel="canonical" href="<txp:section url='1' />">
-		</txp:if_individual_article>
-	</txp:if_section>
+		<meta name="none">
+	</txp:if_status>
 
 	<txp:feed_link flavor="atom" format="link" label="Atom" section="" />
 	<txp:feed_link flavor="rss" format="link" label="RSS" section="" />
@@ -49,4 +46,6 @@
 	<link rel="stylesheet" media="screen" href="<txp:css name="bootstrap_min" />">  
 	<link rel="stylesheet" media="screen" href="<txp:css name="minimum_style" />">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
