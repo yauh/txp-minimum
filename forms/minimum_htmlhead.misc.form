@@ -46,4 +46,6 @@
 	<link rel="stylesheet" media="screen" href="<txp:css name="bootstrap_min" />">  
 	<link rel="stylesheet" media="screen" href="<txp:css name="minimum_style" />">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
