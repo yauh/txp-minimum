@@ -1,3 +1,3 @@
 <footer role="contentinfo" class="span9">
-	<p><small>Powered by <a href="http://textpattern.com/" rel="external" title="Go to the Textpattern CMS homepage">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external" title="Go to the Minimum theme homepage">Minimum</a> by <a href="http://yauh.de" rel="external" title="Go to the theme author’s homepage">Stephan Hochhaus</a>.</small><p>
+	<p><small><txp:text item="published_with" /> <a href="http://textpattern.com/" rel="external" title="<txp:text item='go_txp_com' />">Textpattern CMS</a> | Theme: <a href="http://minimum.yauh.de/" rel="external" title="Go to the Minimum theme homepage">Minimum</a> by <a href="http://yauh.de" rel="external" title="Go to the theme author’s homepage">Stephan Hochhaus</a>.</small><p>
 </footer>

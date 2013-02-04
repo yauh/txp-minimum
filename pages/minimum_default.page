@@ -20,7 +20,7 @@
 
 					<txp:if_variable name="more" value="">
 					<txp:else />
-						<nav role="navigation" id="paginator" aria-label="Article navigation">
+						<nav role="navigation" id="paginator" class="clearfix" aria-label="Article navigation">
 
 							<txp:if_variable name="prev" value="">
 							<txp:else />
@@ -45,7 +45,7 @@
 
 					<txp:if_variable name="more" value="">
 					<txp:else />
-						<nav role="navigation" id="paginator" aria-label="Page navigation">
+						<nav role="navigation" id="paginator" class="clearfix" aria-label="Page navigation">
 
 							<txp:if_variable name="prev" value="">
 							<txp:else />
