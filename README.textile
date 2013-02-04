@@ -2,7 +2,7 @@ h1. txp-minimum
 
 Minimum theme for "Textpattern CMS":http://textpattern.com. See a "working demo here":http://minimum.yauh.de.
 
-A huge *thank you* goes to "Amit Varia":http://amitvaria.com/, who inspired this theme.
+A huge *thank you* goes to "Amit Varia":http://amitvaria.com/, who inspired this theme as well as "Phil Wareham":http://www.philwareham.co.uk/, who added a great deal of magic touch.
 
 Minimum enables you to publish your writings, but it does not allow you to:
 
