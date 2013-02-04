@@ -45,6 +45,19 @@ img.align-right {
 	margin: 1em 0 1em 1em;
 }
 
+#paginator {
+	padding: 1em 0;
+	border-top: 1px solid #ccc;
+}
+
+#paginator-l {
+	float: left;
+}
+
+#paginator-r {
+	float: right;
+}
+
 footer {
 	text-align: center;
 	padding: 2em 0 1em;

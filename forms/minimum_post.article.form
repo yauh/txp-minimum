@@ -1,5 +1,9 @@
 <article role="article" itemscope itemtype="http://schema.org/Article">
-	<h1 itemprop="name"><txp:permlink><txp:title /></txp:permlink></h1>
+	<txp:if_individual_article>
+		<h1 itemprop="name"><txp:title /></h1>
+	<txp:else />
+		<h1 itemprop="name"><txp:permlink><txp:title /></txp:permlink></h1>
+	</txp:if_individual_article>
 	<h4><time datetime="<txp:posted format='iso8601' />" itemprop="datePublished"><txp:posted /></time></h4>
 	<div class="body" itemprop="articleBody">
 		<txp:body />
