@@ -193,7 +193,12 @@ kbd {
 }
 
 pre {
+	overflow-x: auto;
+	word-break: normal;
+	word-wrap: normal;
+	white-space: pre;
 	margin: 0 0 1em 0;
+	tab-size: 4; /* set tab size to 4 spaces */
 }
 
 address {

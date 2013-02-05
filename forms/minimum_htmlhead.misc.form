@@ -21,6 +21,8 @@
 		</txp:if_status>
 	</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
 	<txp:if_individual_article>
 		<txp:if_keywords>
 			<meta name="keywords" content="<txp:keywords />">
