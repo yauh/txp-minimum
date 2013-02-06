@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="<txp:lang />">
 
-<txp:output_form form="minimum_htmlhead" />
+    <txp:output_form form="minimum_htmlhead" />
 
-<body>
-	<div class="container">
-		<div class="row">
+    <body>
+        <div class="container">
+            <div class="row">
 
-			<txp:output_form form="minimum_header" />
+                <txp:output_form form="minimum_header" />
 
-			<div role="main" class="span9" aria-label="Main content">
-				<h1 class="error-status"><txp:error_status /></h1>
-				<p class="error-msg"><txp:error_message /></p>
-			</div>
+                <div role="main" class="span9" aria-label="Main content">
+                    <txp:output_form form="minimum_slider" />
+                    <h1 class="error-status"><txp:error_status /></h1>
+                    <p class="error-msg"><txp:error_message /></p>
+                </div>
 
-			<txp:output_form form="minimum_footer" />
+                <txp:output_form form="minimum_footer" />
 
-		</div>
-	</div>
+            </div>
+        </div>
 
-	<txp:output_form form="minimum_javascript" />
+    <txp:output_form form="minimum_javascript" />
 
 </body>
 </html>

@@ -5,3 +5,13 @@
 		window.prettyPrint && prettyPrint();
 	});
 </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".trigger").click(function(){
+		$(".slider").toggle("fast");
+		$(this).toggleClass("active");
+		return false;
+	});
+});
+</script>
