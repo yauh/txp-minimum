@@ -19,6 +19,14 @@ h2. Installation
 
 Getting up and running is a breeze. Minimum is guaranteed to work on Textpattern 4.5.4. All you need is grab a copy of "cxc_templates":https://github.com/perlmonkey/txp-cxc-templates, install it and copy the minimum theme folder content to your @tpl@ directory.
 
+In order to make the most of your shiny new slider (introduced in version 1.2) you should do the following:
+
+* Create a new section called about (the actual title may vary, just make sure _name_ is about)
+* Create a new article with an excerpt about yourself and publish it in the @about@ section
+* Create a new link category called _social-media_
+* Create as many links as you like ad assign them to the category _social-media_
+* If you wish, you can also directly edit the content of the form _minimum_slider_ to suit your needs
+
 h2. More Information
 
 Have a look at "minimum.yauh.de":http://minimum.yauh.de for some more information about the theme.
