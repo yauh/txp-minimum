@@ -19,14 +19,14 @@ h2. Installation
 
 Getting up and running is a breeze. Minimum is guaranteed to work on Textpattern 4.5.4. All you need is grab a copy of "cxc_templates":https://github.com/perlmonkey/txp-cxc-templates, install it and copy the minimum theme folder content to your @tpl@ directory.
 
-In order to make the most of your shiny new slider (introduced in version 1.2) you should do the following:
+In order to make the most of your shiny new slide-out drawer (introduced in version 1.2) you should do the following:
 
-* Create a new section called about (the actual title may vary, just make sure _name_ is about)
-* Create a new article with an excerpt about yourself and publish it in the @about@ section
-* Also you can assign an article image to the about article - dimensions are 60x60. It will only be displayed in the slider!
-* Create a new link category called _social-media_
-* Create as many links as you like ad assign them to the category _social-media_
-* If you wish, you can also directly edit the content of the form _minimum_slider_ to suit your needs
+# Create a new section called @about@ (the actual title may vary, just make sure _name_ is @about@)
+# Create a new article with an excerpt about yourself, and publish it in the @about@ section
+# You can also assign an optional article image to the about article - dimensions are 60x60 pixels. It will only be displayed in the slide-out drawer!
+# Create a new link category called @social-media@
+# Create as many links as you like ad assign them to the category @social-media@
+# If you wish, you can also directly edit the content of the form @minimum_drawer@ to suit your own needs
 
 h2. More Information
 

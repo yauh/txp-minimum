@@ -366,97 +366,67 @@ tfoot:last-child {
     color: #b8b8b8;
 }
 
-/* Slider
+
+/* Slide-out drawer
    ========================================================================== */
 
-.slider {
+.drawer {
     position: absolute;
-    top: 50px;
+    top: 2em;
     left: 0;
+    z-index: 9;
     display: none;
-    background: #141414;
-    border:1px solid #3B3B3B;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
+    border: 1px solid #3b3b3b;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
+    padding: 30px 30px 30px 130px;
     width: 330px;
     height: auto;
-    padding: 30px 30px 30px 130px;
-    filter: alpha(opacity=95);
-    opacity: .95;
+    color: #fafafa;
+    background: #141414;
 }
 
-.slider p{
+.drawer h3 {
+}
+
+.drawer p {
     margin: 0 0 15px 0;
     padding: 0;
-    color: #cccccc;
 }
 
-.slider h3{
-    color: #BFBFBF;
+.drawer a {
+    color: #fafafa;
+    border-color: #fafafa;
 }
 
-.slider a, .slider a:visited{
-    margin: 0;
-    padding: 0;
-    color: #FFFFFA;
-    text-decoration: none;
+.drawer a:hover {
+    color: #fafafa;
 }
 
-.slider a:hover, .slider a:visited:hover{
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.slider a.more, .slider a.more:visited{
-    font-size: 85%
-}
-
-a.trigger{
+a.drawer-trigger {
     position: absolute;
-    text-decoration: none;
-    top: 80px; left: 0;
-    font-size: 16px;
-    letter-spacing:-1px;
-    font-family: "Ovo", serif;
-    color:#fff;
-    padding: 20px 20px 20px 15px;
-    font-weight: 700;
-    background:#141414;
-    border:1px solid #444444;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-bottomleft: 0px;
-    -webkit-border-bottom-left-radius: 0px;
+    top: 2em;
+    left: 0;
+    z-index: 10;
     display: block;
+    border: 0;
+    -webkit-border-radius: 0 1em 1em 0;
+    -moz-border-radius: 0 1em 1em 0;
+    border-radius: 0 1em 1em 0;
+    padding: 1em;
+    font-family: "Ovo", serif;
+    font-weight: bold;
+    color: #fafafa;
+    background: #141414;
 }
 
-a.trigger:hover{
-    position: absolute;
-    text-decoration: none;
-    top: 80px; left: 0;
-    font-size: 16px;
-    letter-spacing:-1px;
-    font-family: "Ovo", serif;
-    color:#fff;
-    padding: 20px 20px 20px 20px;
-    font-weight: 700;
-    background:#595959;
-    border:1px solid #3B3B3B;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-bottomleft: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    display: block;
+a.drawer-trigger:hover {
+    padding-left: 1.5em;
+    color: #fafafa;
+    background: #595959;
 }
 
-a.active.trigger {
+a.active.drawer-trigger {
     background: #595959;
 }
