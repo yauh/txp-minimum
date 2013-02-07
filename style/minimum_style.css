@@ -366,97 +366,85 @@ tfoot:last-child {
     color: #b8b8b8;
 }
 
-/* Slider
+
+/* Slide-out drawer
    ========================================================================== */
 
-.slider {
+.drawer {
     position: absolute;
     top: 50px;
     left: 0;
+    z-index: 9;
     display: none;
-    background: #141414;
-    border:1px solid #3B3B3B;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
+    border: 1px solid #3b3b3b;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
+    padding: 30px 30px 30px 130px;
     width: 330px;
     height: auto;
-    padding: 30px 30px 30px 130px;
-    filter: alpha(opacity=95);
+    background: #141414;
     opacity: .95;
+    filter: alpha(opacity=95);
 }
 
-.slider p{
+.drawer p {
     margin: 0 0 15px 0;
     padding: 0;
-    color: #cccccc;
+    color: #ccc;
 }
 
-.slider h3{
-    color: #BFBFBF;
+.drawer h3 {
+    color: #bfbfbf;
 }
 
-.slider a, .slider a:visited{
+.drawer a,
+.drawer a:visited {
     margin: 0;
     padding: 0;
-    color: #FFFFFA;
+    color: #fffffa;
     text-decoration: none;
 }
 
-.slider a:hover, .slider a:visited:hover{
+.drawer a:hover,
+.drawer a:visited:hover {
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
-.slider a.more, .slider a.more:visited{
+.drawer a.more,
+.drawer a.more:visited {
     font-size: 85%
 }
 
-a.trigger{
+a.drawer-trigger {
     position: absolute;
-    text-decoration: none;
-    top: 80px; left: 0;
-    font-size: 16px;
-    letter-spacing:-1px;
-    font-family: "Ovo", serif;
-    color:#fff;
+    top: 80px;
+    left: 0;
+    z-index: 10;
+    display: block;
+    border: 1px solid #444;
+    -webkit-border-radius: 0 20px 20px 0;
+    -moz-border-radius: 0 20px 20px 0;
+    border-radius: 0 20px 20px 0;
     padding: 20px 20px 20px 15px;
-    font-weight: 700;
-    background:#141414;
-    border:1px solid #444444;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-bottomleft: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    display: block;
-}
-
-a.trigger:hover{
-    position: absolute;
-    text-decoration: none;
-    top: 80px; left: 0;
-    font-size: 16px;
-    letter-spacing:-1px;
     font-family: "Ovo", serif;
-    color:#fff;
-    padding: 20px 20px 20px 20px;
-    font-weight: 700;
-    background:#595959;
-    border:1px solid #3B3B3B;
-    -moz-border-radius-topright: 20px;
-    -webkit-border-top-right-radius: 20px;
-    -moz-border-radius-bottomright: 20px;
-    -webkit-border-bottom-right-radius: 20px;
-    -moz-border-radius-bottomleft: 0px;
-    -webkit-border-bottom-left-radius: 0px;
-    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #fff;
+    background: #141414;
 }
 
-a.active.trigger {
+a.drawer-trigger:hover {
+    padding: 20px 20px 20px 20px;
+    border-color: #3b3b3b;
+    background: #595959;
+}
+
+a.active.drawer-trigger {
     background: #595959;
 }
