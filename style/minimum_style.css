@@ -372,7 +372,7 @@ tfoot:last-child {
 
 .drawer {
     position: absolute;
-    top: 50px;
+    top: 2em;
     left: 0;
     z-index: 9;
     display: none;
@@ -406,7 +406,7 @@ tfoot:last-child {
 
 a.drawer-trigger {
     position: absolute;
-    top: 80px;
+    top: 2em;
     left: 0;
     z-index: 10;
     display: block;
