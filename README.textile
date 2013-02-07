@@ -26,7 +26,7 @@ In order to make the most of your shiny new slide-out drawer (introduced in vers
 # You can also assign an optional article image to the about article - dimensions are 60x60 pixels. It will only be displayed in the slide-out drawer!
 # Create a new link category called @social-media@
 # Create as many links as you like ad assign them to the category @social-media@
-# If you wish, you can also directly edit the content of the form @minimum_slider@ to suit your own needs
+# If you wish, you can also directly edit the content of the form @minimum_drawer@ to suit your own needs
 
 h2. More Information
 

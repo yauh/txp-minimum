@@ -10,7 +10,9 @@
                 <txp:output_form form="minimum_header" />
 
                 <div role="main" class="span9" aria-label="Main content">
-                    <txp:output_form form="minimum_slider" />
+
+                    <txp:output_form form="minimum_drawer" />
+
                     <h1 class="error-status"><txp:error_status /></h1>
                     <p class="error-msg"><txp:error_message /></p>
                 </div>

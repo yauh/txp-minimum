@@ -10,7 +10,9 @@
                 <txp:output_form form="minimum_header" />
 
                 <div role="main" class="span9" aria-label="Main content">
-                    <txp:output_form form="minimum_slider" />
+
+                    <txp:output_form form="minimum_drawer" />
+
                     <txp:if_individual_article>
 
                         <txp:article form="minimum_post" limit="1" />
