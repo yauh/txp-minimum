@@ -7,7 +7,7 @@
 	});
 
 	// Slide-out drawer
-	$(".trigger").click(function(){
+	$(".drawer-trigger").click(function(){
 		$(".drawer").toggle("fast");
 		$(this).toggleClass("active");
 		return false;
