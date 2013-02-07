@@ -47,7 +47,7 @@
                         </div>
                     </aside>
 
-                    <a role="button" class="trigger" href="#">more</a>
+                    <a role="button" class="drawer-trigger" href="#">more</a>
 
 
                     <article role="article" itemscope itemtype="http://schema.org/Article">
@@ -238,8 +238,8 @@
         </script>
         <script type="text/javascript">
             $(document).ready(function() {
-                $(".trigger").click(function() {
-                    $(".slider").toggle("fast");
+                $(".drawer-trigger").click(function() {
+                    $(".drawer").toggle("fast");
                     $(this).toggleClass("active");
                     return false;
                 });
