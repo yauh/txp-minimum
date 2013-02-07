@@ -383,26 +383,25 @@ tfoot:last-child {
     padding: 30px 30px 30px 130px;
     width: 330px;
     height: auto;
+    color: #fafafa;
     background: #141414;
 }
 
 .drawer h3 {
-    color: #bfbfbf;
 }
 
 .drawer p {
     margin: 0 0 15px 0;
     padding: 0;
-    color: #ccc;
 }
 
 .drawer a {
-    color: #fff;
-    border-color: #fff;
+    color: #fafafa;
+    border-color: #fafafa;
 }
 
 .drawer a:hover {
-    color: #fff;
+    color: #fafafa;
 }
 
 a.drawer-trigger {
@@ -418,12 +417,13 @@ a.drawer-trigger {
     padding: 1em;
     font-family: "Ovo", serif;
     font-weight: bold;
-    color: #fff;
+    color: #fafafa;
     background: #141414;
 }
 
 a.drawer-trigger:hover {
     padding-left: 1.5em;
+    color: #fafafa;
     background: #595959;
 }
 
