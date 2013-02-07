@@ -384,8 +384,10 @@ tfoot:last-child {
     width: 330px;
     height: auto;
     background: #141414;
-    opacity: .95;
-    filter: alpha(opacity=95);
+}
+
+.drawer h3 {
+    color: #bfbfbf;
 }
 
 .drawer p {
@@ -394,29 +396,13 @@ tfoot:last-child {
     color: #ccc;
 }
 
-.drawer h3 {
-    color: #bfbfbf;
-}
-
-.drawer a,
-.drawer a:visited {
-    margin: 0;
-    padding: 0;
-    color: #fffffa;
-    text-decoration: none;
-}
-
-.drawer a:hover,
-.drawer a:visited:hover {
-    margin: 0;
-    padding: 0;
+.drawer a {
     color: #fff;
-    text-decoration: none;
+    border-color: #fff;
 }
 
-.drawer a.more,
-.drawer a.more:visited {
-    font-size: 85%
+.drawer a:hover {
+    color: #fff;
 }
 
 a.drawer-trigger {
@@ -425,22 +411,19 @@ a.drawer-trigger {
     left: 0;
     z-index: 10;
     display: block;
-    border: 1px solid #444;
-    -webkit-border-radius: 0 20px 20px 0;
-    -moz-border-radius: 0 20px 20px 0;
-    border-radius: 0 20px 20px 0;
-    padding: 20px 20px 20px 15px;
+    border: 0;
+    -webkit-border-radius: 0 1em 1em 0;
+    -moz-border-radius: 0 1em 1em 0;
+    border-radius: 0 1em 1em 0;
+    padding: 1em;
     font-family: "Ovo", serif;
-    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
     color: #fff;
     background: #141414;
 }
 
 a.drawer-trigger:hover {
-    padding: 20px 20px 20px 20px;
-    border-color: #3b3b3b;
+    padding-left: 1.5em;
     background: #595959;
 }
 
