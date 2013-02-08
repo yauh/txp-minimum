@@ -1,4 +1,4 @@
-<aside class="drawer">
+<aside class="drawer" aria-labelledby="drawer-title" tabindex="0">
 
 	<txp:article_custom form="minimum_drawer_article" limit="1" section="about" />
 

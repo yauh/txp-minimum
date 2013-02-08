@@ -1,4 +1,4 @@
-<h3><txp:title /></h3>
+<h3 id="drawer-title"><txp:title /></h3>
 <txp:if_article_image>
 	<txp:article_image width="60" height="60" class="right" />
 </txp:if_article_image>

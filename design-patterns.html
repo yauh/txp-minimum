@@ -9,7 +9,6 @@
         <meta name="generator" content="Textpattern CMS">
         <link rel="stylesheet" media="screen" href="style/bootstrap_min.css">  
         <link rel="stylesheet" media="screen" href="style/minimum_style.css">
-        <link rel="stylesheet" media="screen" href="style/google_code_prettify.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
         <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     </head>
@@ -232,19 +231,19 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.js"></script>
         <script>
-            $(function() {
-                window.prettyPrint && prettyPrint();
-            });
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".drawer-trigger").click(function() {
-                    $(".drawer").toggle("fast");
-                    $(this).toggleClass("active");
-                    return false;
-                });
-            });
-        </script>
+			// Google Code Prettify
+			$(function () {
+				window.prettyPrint && prettyPrint();
+			});
 
+			// Setup drawer ARIA
+			$('.drawer').attr({'aria-hidden': 'true'}).hide();
+
+			// Open slide-out drawer
+			$('.drawer-trigger').click(function () {
+				$('.drawer').toggle('fast').attr({'aria-hidden': 'false'}).focus();
+				return false;
+			});
+        </script>
     </body>
 </html>
