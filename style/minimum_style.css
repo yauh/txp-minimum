@@ -377,10 +377,10 @@ tfoot:last-child {
     z-index: 9;
     display: none;
     border: 1px solid #3b3b3b;
-    -webkit-border-radius: 0 20px 20px 0;
-    -moz-border-radius: 0 20px 20px 0;
-    border-radius: 0 20px 20px 0;
-    padding: 30px 30px 30px 130px;
+    -webkit-border-radius: 0 1em 1em 0;
+    -moz-border-radius: 0 1em 1em 0;
+    border-radius: 0 1em 1em 0;
+    padding: 1em 1em 1px 6em;
     width: 330px;
     height: auto;
     color: #fafafa;
