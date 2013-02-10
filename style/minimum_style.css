@@ -397,6 +397,10 @@ tfoot:last-child {
     background: #595959;
 }
 
+#drawer-trigger[aria-pressed="false"] {
+    background: #141414;
+}
+
 #drawer-trigger[aria-pressed="true"] {
     background: #595959;
 }
