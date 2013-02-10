@@ -1,4 +1,6 @@
-<aside class="drawer" aria-labelledby="drawer-title" tabindex="0">
+<a id="drawer-trigger" href="#" role="button" aria-controls="drawer" aria-pressed="false">more</a>
+
+<aside id="drawer" role="complementary" aria-labelledby="drawer-trigger" tabindex="-1" aria-expanded="false">
 
 	<txp:article_custom form="minimum_drawer_article" limit="1" section="about" />
 
@@ -15,5 +17,3 @@
 	</div>
 
 </aside>
-
-<a role="button" class="drawer-trigger" href="#">more</a>
