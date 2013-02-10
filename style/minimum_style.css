@@ -370,41 +370,7 @@ tfoot:last-child {
 /* Slide-out drawer
    ========================================================================== */
 
-.drawer {
-    position: absolute;
-    top: 2em;
-    left: 0;
-    z-index: 9;
-    display: none;
-    border: 1px solid #3b3b3b;
-    -webkit-border-radius: 0 20px 20px 0;
-    -moz-border-radius: 0 20px 20px 0;
-    border-radius: 0 20px 20px 0;
-    padding: 30px 30px 30px 130px;
-    width: 330px;
-    height: auto;
-    color: #fafafa;
-    background: #141414;
-}
-
-.drawer h3 {
-}
-
-.drawer p {
-    margin: 0 0 15px 0;
-    padding: 0;
-}
-
-.drawer a {
-    color: #fafafa;
-    border-color: #fafafa;
-}
-
-.drawer a:hover {
-    color: #fafafa;
-}
-
-a.drawer-trigger {
+#drawer-trigger {
     position: absolute;
     top: 2em;
     left: 0;
@@ -414,19 +380,91 @@ a.drawer-trigger {
     -webkit-border-radius: 0 1em 1em 0;
     -moz-border-radius: 0 1em 1em 0;
     border-radius: 0 1em 1em 0;
-    padding: 1em;
+    padding: .5em 1em;
     font-family: "Ovo", serif;
     font-weight: bold;
     color: #fafafa;
     background: #141414;
+    -webkit-transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+    -moz-transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
 }
 
-a.drawer-trigger:hover {
-    padding-left: 1.5em;
+#drawer-trigger:hover {
+    padding: .5em 1em .5em 1.5em;
     color: #fafafa;
     background: #595959;
 }
 
-a.active.drawer-trigger {
+#drawer-trigger[aria-pressed="true"] {
     background: #595959;
+}
+
+#drawer {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    z-index: 9;
+    display: none;
+    -webkit-border-radius: 0 1em 1em 0;
+    -moz-border-radius: 0 1em 1em 0;
+    border-radius: 0 1em 1em 0;
+    padding: 1em 1em 1px 6.5em;
+    max-width: 435px;
+    color: #fafafa;
+    background: #141414;
+}
+
+#drawer h3 {
+}
+
+#drawer p {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+#drawer a {
+    color: #fafafa;
+    border-color: #fafafa;
+}
+
+#drawer a:hover {
+    color: #fafafa;
+}
+
+
+/* Layout changes for small devices (up to 767px width)
+   ========================================================================== */
+
+@media (max-width:767px) {
+
+    header {
+        padding-top: 4.5em;
+    }
+
+    #drawer-trigger {
+        top: 0;
+        left: 33%;
+        right: 33%;
+        text-align: center;
+        -webkit-border-radius: 0 0 1em 1em;
+        -moz-border-radius: 0 0 1em 1em;
+        border-radius: 0 0 1em 1em;
+    }
+
+    #drawer-trigger:hover {
+        padding: 1em 1em .5em 1em;
+    }
+
+    #drawer {
+        left: 20px;
+        right: 20px;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        border-radius: 1em;
+        padding: 1em 1em 1px 1em;
+        max-width: inherit;
+    }
+
 }

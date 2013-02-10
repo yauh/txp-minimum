@@ -23,7 +23,7 @@ In order to make the most of your shiny new slide-out drawer (introduced in vers
 
 # Create a new section called @about@ (the actual title may vary, just make sure _name_ is @about@)
 # Create a new article with an excerpt about yourself, and publish it in the @about@ section
-# You can also assign an optional article image to the about article - dimensions are 60x60 pixels. It will only be displayed in the slide-out drawer!
+# You can also assign an optional article image to the about article - dimensions are 64x64 pixels (if you wish to have a HiDPI image then load it into Textpattern at 128x128 pixels, it will be scaled down accordingly). It will only be displayed in the slide-out drawer!
 # Create a new link category called @social-media@
 # Create as many links as you like ad assign them to the category @social-media@
 # If you wish, you can also directly edit the content of the form @minimum_drawer@ to suit your own needs

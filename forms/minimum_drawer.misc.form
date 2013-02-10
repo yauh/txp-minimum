@@ -1,19 +1,13 @@
-<aside class="drawer">
+<a id="drawer-trigger" href="#" role="button" aria-controls="drawer" aria-pressed="false">more</a>
+
+<aside id="drawer" role="complementary" aria-labelledby="drawer-trigger" tabindex="-1" aria-expanded="false">
 
 	<txp:article_custom form="minimum_drawer_article" limit="1" section="about" />
 
-	<div class="columns clearfix">
-		<div class="colleft">
-			<h3>Find me here</h3>
-			<txp:linklist category="social-media" form="minimum_links" sort="linksort asc" wraptag="ul" break="li" />
-		</div>
+	<h3>Find me here</h3>
+	<txp:linklist category="social-media" form="minimum_links" sort="linksort asc" wraptag="ul" break="li" />
 
-		<div class="colright">
-			<h3>100% unpressed</h3>
-			<p>No words have been pressed in the generation of this page.</p>
-		</div>
-	</div>
+	<h3>100% unpressed</h3>
+	<p>No words have been pressed in the generation of this page.</p>
 
 </aside>
-
-<a role="button" class="drawer-trigger" href="#">more</a>
