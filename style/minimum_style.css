@@ -370,7 +370,7 @@ tfoot:last-child {
 /* Slide-out drawer
    ========================================================================== */
 
-.drawer {
+#drawer {
     position: absolute;
     top: 2em;
     left: 0;
@@ -387,24 +387,24 @@ tfoot:last-child {
     background: #141414;
 }
 
-.drawer h3 {
+#drawer h3 {
 }
 
-.drawer p {
+#drawer p {
     margin: 0 0 15px 0;
     padding: 0;
 }
 
-.drawer a {
+#drawer a {
     color: #fafafa;
     border-color: #fafafa;
 }
 
-.drawer a:hover {
+#drawer a:hover {
     color: #fafafa;
 }
 
-a.drawer-trigger {
+#drawer-trigger {
     position: absolute;
     top: 2em;
     left: 0;
@@ -421,12 +421,12 @@ a.drawer-trigger {
     background: #141414;
 }
 
-a.drawer-trigger:hover {
+#drawer-trigger:hover {
     padding-left: 1.5em;
     color: #fafafa;
     background: #595959;
 }
 
-a.active.drawer-trigger {
+#drawer-trigger[aria-pressed="true"] {
     background: #595959;
 }
