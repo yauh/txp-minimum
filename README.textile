@@ -19,6 +19,8 @@ h2. Installation
 
 Getting up and running is a breeze. Minimum is guaranteed to work on Textpattern 4.5.4. All you need is grab a copy of "cxc_templates":https://github.com/perlmonkey/txp-cxc-templates, install it and copy the minimum theme folder content to your @tpl@ directory.
 
+It would also be a advisable to set the advanced preference 'Prevent widowed words in article titles?' to 'No', otherwise long title wording could potentially spill out of your responsive page on narrow screen widths.
+
 In order to make the most of your shiny new slide-out drawer (introduced in version 1.2) you should do the following:
 
 # Create a new section called @about@ (the actual title may vary, just make sure _name_ is @about@)
