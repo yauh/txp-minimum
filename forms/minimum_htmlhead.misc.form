@@ -50,4 +50,9 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Average|Donegal+One|Ovo">
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+	<!-- Media Queries support for IE < 9 -->
+	<!--[if lt IE 9]>
+		<script src="<txp:site_url />js/css3-mediaqueries.js"></script>
+	<![endif]-->
 </head>
