@@ -9,7 +9,7 @@
 
                 <txp:output_form form="minimum_header" />
 
-                <div role="main" class="span9" aria-label="Main content">
+                <main role="main" class="span9" aria-label="Main content">
 
                     <txp:output_form form="minimum_drawer" />
 
@@ -64,7 +64,7 @@
                         </txp:if_variable>
 
                     </txp:if_individual_article>
-                </div>
+                </main>
 
                 <txp:output_form form="minimum_footer" />
 
