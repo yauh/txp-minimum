@@ -4,8 +4,17 @@
 
 	<txp:article_custom form="minimum_drawer_article" limit="1" section="about" />
 
-	<h3>Find me here</h3>
+	<h3>Find me there</h3>
 	<txp:linklist category="social-media" form="minimum_links" sort="linksort asc" wraptag="ul" break="li" />
+
+    <h3>Find stuff here</h3>
+	<form method="get" class="searchform" id="searchform" action="<txp:site_url />" role="search">
+		<div>
+			<label class="screen-reader-text" for="s"></label>
+			<input type="text" class="search-input" name="q" id="s" />
+			<input class="searchsubmit" type="submit" value="<txp:text item="yoko_search" />" />
+		</div>
+	</form>
 
 	<h3>100% unpressed</h3>
 	<p>No words have been pressed in the generation of this page.</p>
