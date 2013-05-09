@@ -1,14 +1,65 @@
-.htaccess
-css.php
-rpc/
-sites/site*/admin/
-sites/site*/private/
-sites/site*/public/admin/
-sites/site*/public/setup/
-sites/site*/public/theme/
-textpattern/
-HISTORY.txt
-README.txt
-.DS_Store
-nbproject/
+# Ignore editors
+# Espresso
+*.esproj
 
+# Netbeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# PHPStorm
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+# SASS
+*.sass-cache
+
+# vim
+.*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# ignore OS
+.Spotlight-V100
+.Trashes
+._*
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Frameworks
+# Yii
+assets/
+protected/runtime/
+themes/classic/views/
+
+# Node
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
