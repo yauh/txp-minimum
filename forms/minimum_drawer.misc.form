@@ -12,7 +12,7 @@
 		<div>
 			<label class="screen-reader-text" for="s"></label>
 			<input type="text" class="search-input" name="q" id="s" />
-			<input class="searchsubmit" type="submit" value="<txp:text item="yoko_search" />" />
+			<input class="searchsubmit" type="submit" value="Search" />
 		</div>
 	</form>
 
