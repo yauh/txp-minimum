@@ -13,4 +13,6 @@
 <txp:hide>
 Adding Google+ comments
 </txp:hide>
+<txp:if_individual_article>
 <div class="g-comments" data-href="<txp:permlink />" data-width="1040" data-first_party_property="BLOGGER" data-view_type="FILTERED_POSTMOD"></div>
+</txp:if_individual_article>
