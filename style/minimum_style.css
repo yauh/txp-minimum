@@ -382,7 +382,6 @@ tfoot:last-child {
     border-radius: 0 1em 1em 0;
     padding: .5em 1em;
     font-family: "Ovo", serif;
-    font-weight: bold;
     color: #fafafa;
     background: #141414;
     -webkit-transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
